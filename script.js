@@ -5,6 +5,8 @@ let sum2=0;
 
 pointsArr.forEach(points=>{
     points.addEventListener("click",function(e){
+        if(e.target.classList.contains("point")){
+            
         let point = e.target.innerText;
         let par = e.target.parentElement.parentElement;
 
@@ -19,8 +21,11 @@ pointsArr.forEach(points=>{
 
         //--highlight the team which has high score
         highlightTeam();
+
+    }
         
     });
+    
 });
 
 function highlightTeam(){
