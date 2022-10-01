@@ -1,0 +1,59 @@
+/* General CSS */
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+
+    color: white;
+}
+
+/* Scoreboard-Section */
+.scoreboard-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+.container{
+    background-color: rgb(35, 10, 82);
+    width: 35%;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding: 4rem;
+}
+.score,.points{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+.highlight{
+    background-color: yellow;
+    color: Black;
+}
+.score{
+    color: #F94F6D;
+    font-size: 5rem;
+    background-color: black;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 2rem 0 2rem;
+    border-radius: 0.5rem;
+}
+.points{
+    display: flex;
+    gap: 1rem;
+    color: #9AABD8;
+}
+.point{
+    border: 1px solid #9AABD8;
+    padding: 0.4rem;
+    cursor: pointer;
+}
